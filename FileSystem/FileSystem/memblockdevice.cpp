@@ -107,7 +107,7 @@ void MemBlockDevice::readBlock(int blockNr, char* cArr) const {
 		FILE* filePtr;
 
 		int error = fopen_s(&filePtr, "disk", "rb");
-		fread(cArr, sizeof(blocksize), 1, filePtr);
+		fread(cArr, blocksize, 1, filePtr);
 
 
     }

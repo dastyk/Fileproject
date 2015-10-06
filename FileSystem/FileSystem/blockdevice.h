@@ -18,6 +18,7 @@ protected:
   //  Block* memBlocks;
     int nrOfBlocks;
     int freePointer;
+	ofstream out;
 public:
     BlockDevice(int nrOfBlocks);
     BlockDevice(const BlockDevice &other);

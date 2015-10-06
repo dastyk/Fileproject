@@ -11,7 +11,7 @@ public:
 	virtual ~Directory();
 
 	int LoadFromMem(MemBlockDevice * device, int blockNr);
-	int WriteToMem(MemBlockDevice* device) const;
+	int WriteToMem(MemBlockDevice* device);
 	char* ToString() const;
 private:
 	std::vector<int> mChildren; // BlockNr of children
